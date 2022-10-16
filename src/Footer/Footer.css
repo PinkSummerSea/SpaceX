@@ -1,0 +1,32 @@
+.Footer {
+  background: rgb(252, 237, 138);
+  background: linear-gradient(
+    0deg,
+    rgba(252, 237, 138, 1) 0%,
+    rgba(217, 164, 207, 1) 100%
+  );
+  font-weight: 500;
+  color: white;
+  min-height: 14rem;
+  overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+.icons {
+  font-size: 1.5rem;
+  gap: 4rem;
+}
+
+.icons a {
+  transition: all 0.2s;
+}
+.icons a:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 295px) {
+  .icons {
+    font-size: 1rem;
+    gap: 1rem;
+  }
+}

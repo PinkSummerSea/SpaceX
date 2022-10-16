@@ -1,0 +1,147 @@
+.LaunchCard {
+  min-height: 18rem;
+  margin-bottom: 5rem;
+  margin-top: 2rem;
+  font-family: "Poppins", sans-serif;
+  background-color: rgba(255, 255, 255, 0.227);
+  border-radius: 20px;
+  transition: all 0.2s;
+}
+
+.LaunchCard:hover {
+  transform: scale(1.1);
+}
+
+.desc {
+  line-height: 1.8rem;
+  color: rgb(255, 252, 252);
+  font-weight: lighter;
+}
+
+.info {
+  font-size: 1.1rem;
+  line-height: 1.9rem;
+  color: rgb(255, 255, 255);
+}
+
+.mission-name {
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+}
+
+.info span {
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+
+#hr {
+  background: white;
+  color: white;
+  width: 92%;
+  margin-top: -1rem;
+  height: 0.2rem;
+}
+
+#header {
+  min-height: 65px;
+  margin-bottom: 1.2rem;
+  border-radius: 20px 20px 0 0;
+  align-items: center;
+}
+
+.patch {
+  width: clamp(8rem, 90%, 20rem);
+  margin-top: -10rem;
+  margin-left: 3rem;
+  position: relative;
+  z-index: 99;
+  filter: drop-shadow(0 1rem 1rem rgba(82, 82, 82, 0.741));
+}
+
+.success {
+  font-weight: 700;
+  color: white;
+  font-size: 1.5rem;
+}
+
+@media (width <= 1199px) {
+  .patch {
+    margin-top: 0;
+    margin-left: 0;
+    padding-left: 3rem;
+  }
+}
+
+@media (width <=991px) {
+  .patch {
+    margin-top: 0;
+
+    padding-left: 0;
+  }
+
+  .text-wrapper {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #header {
+    align-items: end;
+  }
+
+  .success {
+    flex-wrap: nowrap;
+  }
+
+  .button {
+    margin-bottom: 1rem;
+    width: 50%;
+  }
+}
+
+@media (width <= 767px) {
+  .patch {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .patch-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 2rem;
+  }
+
+  .text-wrapper {
+    text-align: center;
+  }
+
+  .button {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+  }
+
+  .info {
+    line-height: 1.5rem;
+  }
+
+  .desc {
+    line-height: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 295px) {
+  .button {
+    font-size: 1rem;
+  }
+
+  .name,
+  .success {
+    font-size: 1rem;
+  }
+
+  .mission-name {
+    font-size: 1.2rem;
+  }
+}

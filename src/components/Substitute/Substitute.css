@@ -1,0 +1,42 @@
+.Substitute {
+  background: rgba(217, 164, 207, 1);
+  background-position: 0 -1rem;
+  min-height: 30vh;
+  margin-bottom: -0.1rem;
+  font-family: "Poppins", sans-serif;
+  border-top: 1rem rgba(217, 164, 207, 1) solid;
+  box-sizing:content-box
+}
+
+.substitute-img {
+  width: 10rem;
+  margin-top: 3rem;
+  animation: updown 2s linear infinite;
+}
+
+.substitute-heading {
+  color: white;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-20px);
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+@media screen and (max-width: 455px) {
+  .Substitute {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

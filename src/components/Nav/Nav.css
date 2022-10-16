@@ -1,0 +1,51 @@
+.Nav {
+  background-color: transparent;
+}
+
+#nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo {
+  width: 12rem;
+  height: auto;
+}
+
+.inline {
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.2s;
+  transform: translate(0, 0.3rem);
+}
+
+.inline:hover {
+  text-shadow: rgba(255, 255, 255, 0.698) 1px 0 10px;
+}
+
+@media screen and (max-width: 576px) {
+  .Nav {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #logo {
+    width: 8rem;
+    height: auto;
+  }
+
+  .inline {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 295px) {
+  #logo {
+    width: 6rem;
+  }
+
+  .inline {
+    font-size: 0.6rem;
+    font-weight: 200;
+  }
+}

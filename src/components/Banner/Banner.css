@@ -1,0 +1,107 @@
+.Banner {
+  width: 100%;
+  height: fit-content;
+  background-image: url("../../assets/images/background.png");
+  background-size: cover;
+  overflow-x: hidden; 
+  font-family: "Poppins", sans-serif;
+  position: relative;
+ 
+}
+
+.Banner::-webkit-scrollbar { 
+    display: none;
+}
+
+.Banner::before {
+  content: "";
+  width: 100%;
+  height: 50vw;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -0.3rem;
+  left: 0;
+  background: rgba(255, 255, 255, 0)
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 10%,
+      rgba(255, 255, 255, 0.1) 50%,
+      rgba(217, 164, 207, 1) 100%
+    )
+    repeat scroll 0 0;
+}
+
+#separator {
+  height: clamp(3.125rem, 2.5298rem + 2.9762vw, 5.6rem);
+}
+
+.quote {
+  font-size: clamp(3.125rem, 2.5298rem + 2.9762vw, 5.6rem);
+  font-weight: 800;
+  color: white;
+  position: relative;
+}
+
+.name {
+  align-self: flex-start;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 300;
+  z-index: 222;
+}
+
+.button-white {
+  background-color: transparent;
+  border: 2px white solid;
+  color: white;
+  width: 15rem;
+  height: 3.5rem;
+  font-size: 1.3rem;
+  transition: all 0.6s;
+  z-index: 333;
+  border-radius: 0.9rem;
+  margin-bottom: 8rem;
+}
+
+.button-white:hover {
+  background-color: white;
+  border: 2px white solid;
+  color: rgb(0, 0, 0);
+  width: 15rem;
+  height: 3.5rem;
+  font-size: 1.3rem;
+}
+
+.quote-wrapper {
+  align-self: center;
+}
+
+.banner-main {
+  padding-top: 20vh;
+}
+
+.white {
+  color: white;
+}
+
+@media screen and (max-width: 576px) {
+  .banner-main {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 295px) {
+  .button-white {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .name {
+    font-size: 1rem;
+  }
+
+  .quote {
+    font-size: 2rem;
+  }
+}
