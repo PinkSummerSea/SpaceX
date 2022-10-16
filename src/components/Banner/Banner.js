@@ -31,7 +31,7 @@ export const Banner = () => {
                 <h5 className="name mt-3 ms-2"> Elon Musk</h5>
                 <button className="button-white align-self-start mt-3 ms-1">
                   <a className="white" href="#launches">
-                    Rencent Launches
+                    Rencent Missions
                   </a>
                 </button>
               </Col>
